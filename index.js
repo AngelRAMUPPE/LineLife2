@@ -11,7 +11,7 @@ const uri = 'mongodb+srv://angelram1:LineLife@cluster0.xnhphtv.mongodb.net/?retr
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static('public');
+app.use(express.static('public'));
 
 
 //Ruta para servir la página HTML
