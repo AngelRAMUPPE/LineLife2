@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Registro</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/iniciar.css">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/Logo2.png" type="images/Logo2.png" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+
+<body>
+   <!-- header section start -->
+   <header>
+    <a href="/" class="logo"><img src="images/logo.png" height="65px"></a>
+    <div class="links">
+        <ul>
+            <li><a href="/" style="color: black; text-decoration: none;">Inicio</a></li>
+            <li><a href="registro" style="color: black; text-decoration: none;">Registrarme</a></li>
+            <li><a href="buscar" style="color: black; text-decoration: none;"><img src="images/search-icon.png" alt="" srcset=""></a></li>
+        </ul>
+    </div>
+</header>
+      <!-- header section end -->
+      <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+      <!-- banner section start -->
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="banner_section">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="container">
+                                <div class="title">Registro</div>
+                                <div class="content">
+                                  <form method="POST" action="registrar" id="forms">
+                                    <div class="user-details">
+                                      <div class="input-box">
+                                        <span class="details">Nombre Completo</span>
+                                        <input type="text" placeholder="Ingresa tu Nombre" required name="Nombre" id="Nombre">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Edad</span>
+                                        <input type="number" placeholder="Ingresa tu Edad" required name="Edad" id="Edad">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Telefono 1</span>
+                                        <input type="number" placeholder="Telefono principal" required name="Telefono1" id="Telefono1">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Telefono de emergencia</span>
+                                        <input type="number" placeholder="Telefono emergencia" required name="Telefono2" id="Telefono2">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Tipo de Sangre</span>
+                                        <select id="sangre" name="sangre">
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                          </select>
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Peso en KG</span>
+                                        <input type="number" placeholder="Ingresa tu peso" required name="Peso" id="Peso">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Fecha de Nacimiento</span>
+                                        <input type="date" placeholder="" required name="Fecha" id="Nacimiento">
+                                      </div>
+                                      <div class="input-box">
+                                        <span class="details">Correo</span>
+                                        <input type="text" placeholder="Ingresa tu correo" required name="Correo" id="Correo">
+                                      </div>
+                                      <div class="gender-details">
+                                        <input type="radio" name="Generos" id="dot-1" value="Masculino">
+                                        <input type="radio" name="Generos" id="dot-2">
+                                        <span class="gender-title">Sexo</span>
+                                        <div class="category">
+                                          <label for="dot-1">
+                                          <span class="dot one"></span>
+                                          <span class="Genero">Masculino</span>
+                                        </label>
+                                        <label for="dot-2">
+                                          <span class="dot two"></span>
+                                          <span class="Genero">Femenino</span>
+                                        </label>
+                                        </div>
+                                      </div>
+                                      <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+                                    </div>
+                                    <div class="title">Antecedentes Clínicos</div>
+                                    <div class="user-details">
+                                        <div class="input-box">
+                                            <span class="details">Medicamentos</span>
+                                            <input type="text" id="Medicamentos" placeholder="Agrega Medicamentos" style="height: 90px;" name="Medicamentos">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Alergias</span>
+                                            <input type="text" id="Alergias" placeholder="Agrega Alergias" style="height: 90px;" name="Alergias">
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Notas</span>
+                                            <textarea id="Notas" placeholder="" style="width: 250px; height: 150px;" name="Notas"></textarea>
+                                        </div>
+                                        <div class="input-box">
+                                          <span class="details">Padecimientos</span>
+                                          <select id="padecimiento" name="padecimiento">
+                                              <option value="Hipertensión">Hipertensión</option>
+                                              <option value="Diabetes">Diabetes</option>
+                                              <option value="Asma">Asma</option>
+                                              <option value="Cancer">Cáncer</option>
+                                              <option value="Artritis">Astritis</option>
+                                              <option value="Obesidad">Obesidad</option>
+                                              <option value="Ansiedad">Ansiedad</option>
+                                              <option value="Depresión">Depresión</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                                    <div class="button">
+                                      <input type="submit" value="Registrate" id="submit">
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="imgRight">
+                            <center><div class="image_1"><img src="images/Logo2.png"></div></center>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </div>
+   <!-- banner section end -->
+<script>
+    async function submitRegistration(event) {
+  event.preventDefault();
+  const Nombre = document.getElementById('Nombre').value;
+  const Edad = document.getElementById('Edad').value;
+  const Telefono1 = document.getElementById('Telefono1').value;
+  const Telefono2 = document.getElementById('Telefono2').value;
+  const Sangre = document.getElementById('sangre').value;
+  const Peso = document.getElementById('Peso').value;
+  const FechaNac = document.getElementById('Nacimiento').value;
+  const Correo = document.getElementById('Correo').value;
+  const sexo =  document.querySelector('input[type="radio"]:checked').value;
+  const Medicamentos = document.getElementById('Medicamentos').value;
+const Alergias = document.getElementById('Alergias').value;
+const Notas = document.getElementById('Notas').value;
+const padecimiento = document.getElementById('padecimiento');
+const padecimientos = padecimiento.value;
+
+
+response = await fetch('/registrar', {
+    
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({Nombre, Edad, Telefono1, Telefono2, Sangre, Peso, FechaNac, Correo, sexo, Medicamentos, Alergias, Notas, padecimientos})
+  });
+
+  const data = await response.json();
+
+  if (data.message === 'Registro Correcto!') {
+    alert("Registro Correcto!");
+    window.location.href = data.redirect; 
+  } else {
+    alert(data.message);
+  }
+}
+
+const form = document.getElementById('forms');
+form.addEventListener('submit', submitRegistration);
+</script>
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/custom.js"></script>
+    <!-- AlertifyJS -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/dist/alertify.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>

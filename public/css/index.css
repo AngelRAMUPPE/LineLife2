@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    letter-spacing: 1.5px;
+    font-family: "Poppins";
+}
+.logo {
+    text-decoration: none;
+    color: black;
+}
+header {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+    padding-left: 6vh;
+    padding-right: 4vh;
+}
+hr {
+    border: 2px solid black;
+    max-width: 100%;
+    margin: 0;
+}
+.links {
+    margin-left: auto;
+    order: 2;
+}
+.links ul {
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.links li {
+    text-decoration: none;
+    color: black;
+}
+.links li:hover {
+    margin: 2px;
+    opacity: 50%;
+}
+#Salir {
+    color: red;
+}
+.contenido {
+    display: flex;
+    background-color: #94ceda;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+.Registrar {
+    background-color: #ebae7e;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+.Registrar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.left {
+    flex: 2;
+    margin-left: 5vw;
+}
+.left img {
+    
+    transform: scaleX(-1);
+}
+.right img {
+    height: 300px;
+}
+.right {
+   flex: 1;
+   margin-top: 5vh;
+   margin-right:18vw ;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.imgRight {
+    margin-top: 24vh;
+    margin-left:5vw ;
+}
+.imgRight img {
+    height: 350px;
+}
+
+.id {
+    font-size: 20px; margin-bottom: 10px; margin-top: 20px;
+}
+.id span {
+    font-weight: bold;
+}
