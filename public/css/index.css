@@ -10,16 +10,28 @@
 header {
     font-size: large;
     display: flex;
+    width: 100%;
     align-items: center;
     padding-top: 1vh;
     padding-left: 6vh;
     padding-right: 4vh;
 }
+
 hr {
     border: 2px solid black;
     max-width: 100%;
     margin: 0;
 }
+@media (max-width: 768px) {
+    header {
+        padding: 0px;
+        
+    }
+    .links {
+      display: none;
+    }
+    
+  }
 .links {
     margin-left: auto;
     order: 2;
@@ -43,10 +55,22 @@ hr {
 }
 .contenido {
     display: flex;
+    flex-wrap: wrap;
     background-color: #94ceda;
     padding-top: 25px;
     padding-bottom: 0px;
 }
+@media (max-width: 768px) {
+    .contenido {
+      flex-direction: column;
+    }
+    .contenido img {
+        height: 300px;
+    }
+    .left {
+        margin-left: 8vw;
+    }
+  }
 .Registrar {
     background-color: #ebae7e;
     border: none;
@@ -69,6 +93,11 @@ hr {
 .right img {
     height: 300px;
 }
+@media (max-width: 768px) {
+    .right img {
+      height: 200px;
+    }
+  }
 .right {
    flex: 1;
    margin-top: 5vh;
