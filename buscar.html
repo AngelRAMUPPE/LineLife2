@@ -85,17 +85,28 @@
 
      <script>
        const searchForm = document.getElementById('searchForm');
-    const resultDiv = document.getElementById('user-details2');
+      const resultDiv = document.getElementById('user-details2');
+      const IDInput = document.getElementById('ID');
 
-    searchForm.addEventListener('submit', async (event) => {
+      window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id'); 
+      if (id) {
+        console.log(id);
+        IDInput.value = id; 
+   
+      }
+    };
+
+      searchForm.addEventListener('submit', async (event) => {
       event.preventDefault();
 
       const id = document.getElementById('ID').value;
-
+        
       try {
         const response = await fetch('/datos?id=' + id);
         const data = await response.json();
-        console.log(data);
+      
         if (data.message) {
           resultDiv.textContent = data.message;
         } else {
@@ -107,14 +118,14 @@
           <div class="id"><span>Tipo de Sangre: </span>${data.Sangre}</div>
           <div class="id"><span>Peso: </span>${data.Peso}</div>
           <div class="id"><span>Fecha de Nacimiento: </span>${data.FechaNac}</div>
-          <div class="id"><span>Correo: </span>${data.FechaNac}</div>
+          <div class="id"><span>Correo: </span>${data.Correo}</div>
           <div class="id"><span>Sexo: </span>${data.sexo}</div>
           <div class="id"><span>Medicamentos: </span>${data.Medicamentos}</div>
           <div class="id"><span>Alergias: </span>${data.Alergias}</div>
           <div class="id"><span>Notas: </span>${data.Notas}</div>
           <div class="id"><span>Padecimiento: </span>${data.Padecimientos}</div>
           `;
-          console.log(data);
+
         }
       } catch (error) {
         console.error(error);
