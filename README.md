@@ -35,3 +35,4 @@ información médica personal del usuario, incluyendo: <br>
 ● Información de contactos de emergencia <br>
 
 ### Creado por Angel Ruben 
+#### Version 2 creado con NodeJs y MongoDB
